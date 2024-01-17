@@ -1,0 +1,114 @@
+.body {
+    background-image: linear-gradient(to bottom right, #ffffff, #ffefae);
+}
+
+#skills {
+    overflow: hidden;
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.skillTittle {
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.skillDiscription {
+    font-weight: 300;
+    font-size: 1rem;
+    max-width: 50rem;
+    padding: 0 2rem;
+}
+
+.skillBars {
+    margin: 1.5rem;
+    width: 100vw;
+    max-width: 80%;
+    text-align: left;
+}
+
+.skillBar {
+    display: flex;
+    margin: 1rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background: rgba(255, 241, 113, 0.274);
+    transition: transform 0.3s ease;
+    cursor: grab;
+}
+
+.skillBar:hover {
+    background: rgba(255, 208, 138, 0.5);
+    transition: background 0.3s ease;
+    transform: scale(1.05);
+}
+
+.skillBarImage {
+    object-fit: cover;
+    height: 5rem;
+    width: 6rem;
+    margin-right: 2rem;
+}
+
+.skillBarText>p {
+    font-size: 0.9rem;
+    font-weight: 200;
+}
+
+@media screen and (max-width:720px) {
+    .skillBarText>p {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .skillDiscription {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .skillTittle {
+        font-size: 2rem;
+    }
+
+    .skillDiscription {
+        font-size: 0.8rem;
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .skillTittle {
+        font-size: 1.5rem;
+        padding-top: 2rem;
+    }
+
+    .skillDiscription {
+        font-size: 0.7rem;
+        max-width: 90%;
+        padding: 0 1rem;
+    }
+
+    .skillBar {
+        padding: 1rem;
+    }
+
+    .skillBarImage {
+        height: 4rem;
+        width: 5rem;
+        margin-right: 1rem;
+    }
+
+    .skillBarText>p {
+        font-size: 0.8rem;
+    }
+}
