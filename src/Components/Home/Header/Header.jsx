@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Header.css'
 import { BrowserRouter as Router, Link } from 'react-router-dom'
-import logo from '../../../Assets/Oliwon Logo-01.png'
+import logo from '../../../Assets/logoollinwon.png'
 import instagram from '../../../Assets/instagram-new-outline.png'
 import whatsApp from '../../../Assets/whatsApp.png'
 import faceBook from '../../../Assets/facebook.png'

@@ -9,6 +9,7 @@
     justify-content: center;
     text-align: center;
     padding: 0 1rem;
+    margin-top: 170px;
 }
 
 .WorksTittle{
@@ -28,6 +29,7 @@
  align-items: center;
  justify-content: center;
  width: 100vw;
+ border-radius: 10px;
  max-width: 65rem;
 }
 
@@ -42,7 +44,9 @@ transform: scale(1.1);
 .worksImage{
  object-fit: cover;
  height: 20rem;
+ border-radius: 10px;
  margin: 0.5rem;
+ cursor: pointer;
 }
 
 .wroksss{
