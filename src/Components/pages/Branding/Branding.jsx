@@ -5,9 +5,13 @@ const Branding = () => {
   return (
     <div className='body'>
       <section id='skills'>
+
             <span className="skillTittle">What We do</span>
+
             <span className="skillDiscr `iption">The only way to empower people is to educate them. IQJITA helps aspirants stay ahead in the industrial revolution. We prepare you to launch your career by providing supportive, creative, skill-based, flexible and professional environment programs that enable you to establish a solution that suits your learning needs.</span>
+
             <div className="skillBars">
+
                 <div className="skillBar">
                     <img src="http://www.pngmart.com/files/7/Web-Design-PNG-Photos.png" alt="" className="skillBarImage" />
                     <div className="skillBarText">

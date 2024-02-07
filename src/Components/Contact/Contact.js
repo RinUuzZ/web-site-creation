@@ -3,49 +3,42 @@ import './Contact.css'
 
 function Contact (){
 
- 
-    const [formData, setFormData] = useState({
-        fullname: '',
-        email:'',
-        message:'',
-        // Other form fields if any
+  const [formData, setFormData] = useState({
+    fullname: '',
+    email:'',
+    mobilenumber:'',
+    message:''
+  });
+  const [serverResponse, setServerResponse] = useState(null);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch('http://localhost:4000/api', {
+     method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded'
+      },
+      body: new URLSearchParams(formData).toString(),
       });
 
-      const [serverResponse, setServerResponse] = useState(null);
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({
-          ...formData,
-          [name]: value,
-        });
-      };
-
-   
-
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-   
-        try {
-          // Make a POST request to the server with form data
-          const response = await fetch('http://localhost:4000/contactform', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ formData }),
-          });
-   
-          // Parse the response JSON
-          const responseData = await response.json();
-   
-          // Update state with the server response
-          setServerResponse(responseData);
-         
-        } catch (error) {
-          console.error('Error submitting form:', error);
-        }
+      const responseData = await response.json();
+      setServerResponse(responseData);
       
+    } catch (error) {
+      console.error('Error submitting form:', error);
+    }
+  }
+  
+    const handleChange = (e) => {
+      
+      setFormData({
+        ...formData,
+        [e.target.name]: e.target.value,
+      });
+    };
+ 
+    
 
   return (
     <div>
@@ -85,23 +78,31 @@ function Contact (){
               </div>
             </div>
             <div className="contactForm">
-              <form method="POST" onSubmit={handleSubmit}>
+              <form method="POST" onSubmit={handleSubmit} enctype="application/x-www-form-urlencoded" >
                 <h2>Send Message</h2>
+
                 <div className="inputBox">
-                  <input type="text" name="fullname" required="required" value={formData.name} onClick={handleChange}/>
+                  <input type="text" name="fullname" required="required"  onChange={handleChange} />
                   <span>Full Name</span>
                 </div>
+
                 <div className="inputBox">
-                  <input type="text" name="email" required="required" value={formData.email} onClick={handleChange}/>
+                  <input type="text" name="email" required="required"  onChange={handleChange} />
                   <span>Email</span>
                 </div>
+
                 <div className="inputBox">
-                  <textarea required="required" defaultValue={""}  name="message" value={formData.message} onClick={handleChange}/>
+                  <input type="text" name="mobilenumber" required="required"  onChange={handleChange} />
+                  <span>Mobile Number</span>
+                </div>
+
+                <div className="inputBox">
+                  <textarea required="required" onChange={handleChange}  name="message" />
                   <span>Type Your Message.....</span>
                 </div>
-                <div className="inputBox">
-                  <input type="submit" name defaultValue="Send" />
-                </div>
+                
+                  <button type="submit" className='submitButton'>Submit</button>
+                
               </form>
               {serverResponse && <p>{serverResponse.message}</p>}
             </div>
@@ -109,6 +110,6 @@ function Contact (){
         </section>
       </div>
   )
-}}
+}
 
 export default Contact

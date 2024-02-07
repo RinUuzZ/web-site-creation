@@ -26,7 +26,7 @@ const Header = () => {
                     <img src={logo} alt="" />
                 </div>
                 <Router>
-                    <div className="nav">
+                    <div className="nav" style={{'margin-left' : '-227px'}}>
                         <ul className={sideBar ? 'nav-links-sidebar' : 'nav-links'} onClick={() => setSideBar(false)}>
                             <li><Link to="/">Home</Link></li>
                             <li><Link to="/about">About</Link></li>
