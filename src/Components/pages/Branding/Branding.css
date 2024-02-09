@@ -63,6 +63,25 @@
     font-weight: 200;
 }
 
+.getStarte{
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column; /* Or 'column' if you want vertical layout */
+    align-items: center; /* Centers items vertically if flex-direction is row, horizontally if column */
+    justify-content: center; 
+}
+
+.getStarte h3{
+    font-size: 30px;
+    font-family: auto;
+    font-style: italic;
+    font-weight: 100;
+}
+
+
 @media screen and (max-width:720px) {
     .skillBarText>p {
         font-size: 2vw;

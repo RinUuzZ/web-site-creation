@@ -1,4 +1,4 @@
-#work{
+#work {
     margin: 0 auto;
     height: 950px;
     width: 100%;
@@ -12,55 +12,56 @@
     margin-top: 170px;
 }
 
-.WorksTittle{
- margin: 1rem 0;
- font-size: 3rem;
+.WorksTittle {
+    margin: 1rem 0;
+    font-size: 3rem;
 }
 
-.workdescrtioption{
- font-weight: 300;
- font-size: 1rem;
- max-width: 45rem;
+.workdescrtioption {
+    font-weight: 300;
+    font-size: 1rem;
+    max-width: 45rem;
 }
 
-.worksImages{
- display: flex;
- flex-wrap: wrap;
- align-items: center;
- justify-content: center;
- width: 100vw;
- border-radius: 10px;
- max-width: 65rem;
+.worksImages {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    border-radius: 10px;
+    max-width: 65rem;
 }
 
 .worksImage {
-transition: transform 0.3s ease-in-out; 
+    transition: transform 0.3s ease-in-out;
 }
 
 .worksImage:hover {
-transform: scale(1.1); 
+    transform: scale(1.1);
 }
 
-.worksImage{
- object-fit: cover;
- height: 20rem;
- border-radius: 10px;
- margin: 0.5rem;
- cursor: pointer;
+.worksImage {
+    object-fit: cover;
+    height: 20rem;
+    border-radius: 10px;
+    margin: 0.5rem;
+    cursor: pointer;
 }
 
-.wroksss{
-margin: 3rem 0;
-background-color: white;
-border: none;
-border-radius: 2rem;
-padding: 0.5rem 2.5rem;
-font-size: 1rem;
+.wroksss {
+    margin: 3rem 0;
+    background-color: white;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.5rem 2.5rem;
+    font-size: 1rem;
+    cursor: pointer;
 }
 
 @media screen and (max-width:85px) {
-.worksImage{
-   height: 48vw;
-}
+    .worksImage {
+        height: 48vw;
+    }
 }
 

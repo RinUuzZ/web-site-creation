@@ -26,7 +26,7 @@ const Header = () => {
                     <img src={logo} alt="" />
                 </div>
                 <Router>
-                    <div className="nav" style={{'margin-left' : '-227px'}}>
+                    <div className="nav" style={{'margin-left' : '-464px'}}>
                         <ul className={sideBar ? 'nav-links-sidebar' : 'nav-links'} onClick={() => setSideBar(false)}>
                             <li><Link to="/">Home</Link></li>
                             <li><Link to="/about">About</Link></li>
@@ -42,18 +42,21 @@ const Header = () => {
                                         <a href="https://wa.me/message/PK6UNO6XDCFUG1   " target="_blank" rel="noopener noreferrer">
                                             <img src={whatsApp} alt="WhatsApp" className='headerIcons' />
                                         </a>
+                                        
                                         <a href="https://www.facebook.com/profile.php?id=61551080944269&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
                                             <img src={faceBook} alt="Facebook" className='headerIcons' />
                                         </a>
-                                        <a href='https://www.threads.net/' target="_blank" rel="noopener noreferrer">
-                                            <img src={threads} alt="Threads" className='headerIcons' /></a>
+                                        {/* <a href='https://www.threads.net/' target="_blank" rel="noopener noreferrer">
+                                            <img src={threads} alt="Threads" className='headerIcons' /></a> */}
 
                                         <a href="https://www.linkedin.com/in/sareenajaseem" target="_blank" rel="noopener noreferrer">
                                             <img src={linkedInd} alt="LinkedIn" className='headerIcons' />
                                         </a>
-                                        <a href="mailto:yourname@example.com" target="_blank" rel="noopener noreferrer">
+
+                                        {/* <a href="mailto:yourname@example.com" target="_blank" rel="noopener noreferrer">
                                             <img src={emai} alt="Email" className='headerIcons' />
-                                        </a>
+                                        </a> */}
+
                                         <a href="https://twitter.com/iqjita" target="_blank" rel="noopener noreferrer" class="twitter-link">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
                                                 <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z" />
