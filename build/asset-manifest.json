@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e06f77e0.css",
+    "main.js": "/static/js/main.88757ebf.js",
+    "static/js/787.5d2a3a2f.chunk.js": "/static/js/787.5d2a3a2f.chunk.js",
+    "static/media/backhround image.png": "/static/media/backhround image.acbcc0e5014eed164702.png",
+    "static/media/AppDevelopmnet.jpg": "/static/media/AppDevelopmnet.988f9e29a7a5a5383048.jpg",
+    "static/media/workersImage.png": "/static/media/workersImage.2b56e36271fefbd66e6f.png",
+    "static/media/Graphic-Designing.jpg": "/static/media/Graphic-Designing.98ea6912d375cf2076f5.jpg",
+    "static/media/Digital Marketing.jpeg": "/static/media/Digital Marketing.e1d0c403fb46d263e14d.jpeg",
+    "static/media/email-clipart-transparent-12 (1).png": "/static/media/email-clipart-transparent-12 (1).46bd8d87a8f8fb7525d8.png",
+    "static/media/logoollinwon.png": "/static/media/logoollinwon.5b21edb1c32d797d1bba.png",
+    "static/media/vector-web-development-web-banner.jpg": "/static/media/vector-web-development-web-banner.8574c38795656a53b33f.jpg",
+    "static/media/whatsApp.png": "/static/media/whatsApp.668bb0deb6d937523bfa.png",
+    "static/media/facebook.png": "/static/media/facebook.d02331f2c28b685c0b11.png",
+    "static/media/linkedin.png": "/static/media/linkedin.cc1191fa4d92653d16e0.png",
+    "index.html": "/index.html",
+    "main.e06f77e0.css.map": "/static/css/main.e06f77e0.css.map",
+    "main.88757ebf.js.map": "/static/js/main.88757ebf.js.map",
+    "787.5d2a3a2f.chunk.js.map": "/static/js/787.5d2a3a2f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e06f77e0.css",
+    "static/js/main.88757ebf.js"
+  ]
+}
